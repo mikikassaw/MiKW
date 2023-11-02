@@ -62,16 +62,16 @@ Key Components:
    - The page is titled "Trivia Quiz Game," and an external CSS stylesheet ("quiz.css") is linked to apply styles.
 
 3. Page Content:
-	The main content is contained within a "quiz-container" element.
-	A logo image ("aiqem__logo.svg") is positioned in the top-left corner.
-	The game title, "AiQEM Quiz," is displayed as a heading (h1).
-	Quiz questions are presented within a paragraph with the id "question."
-	User answer options are dynamically inserted into a div with the id "options."
-	The "Next" button (id "next-btn") allows users to proceed to the next question.
-	The quiz result is shown in a hidden paragraph with the id "result."
-	The player's score is indicated with a paragraph displaying "Score: 0."
-	A div with the id "session-id" displays the session ID.
-	Additional div elements are reserved for visual effects, such as fireworks and balloons.
+-	The main content is contained within a "quiz-container" element.
+-	A logo image ("aiqem__logo.svg") is positioned in the top-left corner.
+-	The game title, "AiQEM Quiz," is displayed as a heading (h1).
+-	Quiz questions are presented within a paragraph with the id "question."
+-	User answer options are dynamically inserted into a div with the id "options."
+-	The "Next" button (id "next-btn") allows users to proceed to the next question.
+-	The quiz result is shown in a hidden paragraph with the id "result."
+-	The player's score is indicated with a paragraph displaying "Score: 0."
+-	A div with the id "session-id" displays the session ID.
+-	Additional div elements are reserved for visual effects, such as fireworks and balloons.
 
 4. JavaScript Integration:
    - Two JavaScript scripts are incorporated:
