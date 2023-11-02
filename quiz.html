@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trivia Quiz Game</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<div class="quiz-container">
+  <!-- Add an image in the top left corner -->
+  <img src="aiqem__logo.svg" alt="Image Description" class="top-left-image">
+  
+  <h1>AiQEM Quiz</h1>
+  <p id="question"></p>
+  <div id="options"></div>
+  <button id="next-btn">Next</button>
+  <p id="result" style="display: none;"></p>
+  <p id="score">Score: 0</p>
+  <div id="session-id"></div>
+  <div id="fireworks"></div>
+  <div id="balloons">
+    <!-- Balloon elements will be added here -->
+  </div>
+  
+
+</div>
+
+<script src="quiz.js"></script>
+
+<script>
+  const queryParams = new URLSearchParams(window.location.search);
+  const user_id = queryParams.get("user_id");
+  const username = queryParams.get("username");
+  const session_id = queryParams.get("session_id");
+
+  const user = {
+    id: `${ user_id }`,
+    username: `${ username }`,
+    score: 0
+  };
+
+  const sessionElement = document.getElementById("session-id");
+  sessionElement.textContent = `Session ID: ${session_id}`;
+</script>
+
+</body>
